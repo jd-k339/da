@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jagrit Dawadi | Student Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f7f8fc;
+    }
+    nav {
+      background: #111827;
+      color: white;
+      padding: 16px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    nav strong { font-size: 1.15rem; }
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+    nav a:hover { color: white; }
+    .hero {
+      min-height: 68vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #eef2ff, #ffffff);
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 4.8rem);
+      color: #111827;
+      margin-bottom: 10px;
+    }
+    .hero h2 {
+      font-size: 1.35rem;
+      font-weight: normal;
+      color: #4f46e5;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #4b5563;
+      font-size: 1.05rem;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      background: #4f46e5;
+      color: white;
+      text-decoration: none;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 25px 20px 70px;
+    }
+    section { padding: 55px 0; }
+    section h2 {
+      font-size: 2rem;
+      color: #111827;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    }
+    .card h3 { margin-bottom: 8px; color: #111827; }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background: #eef2ff;
+      color: #3730a3;
+      padding: 9px 14px;
+      border-radius: 999px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #111827;
+      color: #d1d5db;
+    }
+    @media (max-width: 650px) {
+      nav { flex-direction: column; gap: 8px; }
+      nav a { margin: 0 7px; font-size: .9rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <strong>Jagrit Dawadi</strong>
+  <div>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <h1>Jagrit Dawadi</h1>
+    <h2>Student Portfolio</h2>
+    <p>
+      Welcome to my student portfolio. I am a university student interested in
+      technology, business, data analysis, and developing practical skills through
+      my studies and projects.
+    </p>
+    <a class="button" href="#about">Explore My Portfolio</a>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        Hello! My name is Jagrit Dawadi. I am currently studying at Dong-A University.
+        I enjoy learning new technologies, solving problems, and improving my skills
+        through practical university assignments and personal projects.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Dong-A University</h3>
+      <p>Bachelor's Degree — Current Student</p>
+      <p>Busan, South Korea</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">HTML</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">Microsoft Excel</span>
+        <span class="skill">Communication</span>
+        <span class="skill">Teamwork</span>
+        <span class="skill">Problem Solving</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Coursework</h2>
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p>Programming exercises and coursework focused on developing fundamental Python and problem-solving skills.</p>
+    </div>
+    <div class="card">
+      <h3>Data Analysis</h3>
+      <p>University coursework involving data interpretation, spreadsheets, statistics, and analytical thinking.</p>
+    </div>
+    <div class="card">
+      <h3>Student Portfolio Website</h3>
+      <p>This website was created as a student portfolio and published using GitHub Pages.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>You can view my current and future projects through my GitHub profile and portfolio.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Jagrit Dawadi &middot; Student Portfolio</p>
+</footer>
+
+</body>
+</html>
